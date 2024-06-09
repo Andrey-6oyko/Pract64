@@ -1,55 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #9b9595;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: 100vh;
     margin: 0;
 }
 
-.container {
-    background-color: #fff;
+.registration-form {
+    background-color: #fdfdfdbe;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
-h2 {
+.registration-form h2 {
+    margin-bottom: 20px;
     text-align: center;
-    color: #333;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
+.registration-form label {
+    display: block;
     margin-bottom: 5px;
-    color: #555;
+    font-weight: bold;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="date"] {
-    padding: 10px;
+.registration-form input {
+    width: 95%;
+    padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+.registration-form button {
+    width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
+    background-color: #166428;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+.registration-form button:hover {
+    background-color: #218838;
 }
