@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="registration-form">
         <h2>Registration</h2>
-        <form>
+        <form id="registrationForm">
             <label for="name">Login:</label>
             <input type="text" id="name" name="name" required>
 
@@ -25,5 +25,13 @@
             <button type="submit">Register</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Зупинити стандартне відправлення форми
+            alert('Successful registration!');
+            event.target.reset(); // Очистити поля форми
+        });
+    </script>
 </body>
 </html>
